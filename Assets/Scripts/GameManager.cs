@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public static Action MoneyChanged;
     public static GameManager Instance { get; private set; }
 
-    [SerializeField] float money;
+    [SerializeField] float money = 0;
     public float Money
     {
         get { return money; }

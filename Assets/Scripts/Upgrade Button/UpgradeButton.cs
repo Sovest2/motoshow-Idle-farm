@@ -6,45 +6,52 @@ using TMPro;
 
 public class UpgradeButton : MonoBehaviour
 {
+    [SerializeField] protected Button button;
+
+    [Header("Data")]
+    [SerializeField] protected string description;
+    [SerializeField] protected UpgradeData data;
+
     [Header("UI Elements")]
-    [SerializeField] Image upgradeImage;
-    [SerializeField] TMP_Text descriptionText;
-    [SerializeField] TMP_Text levelText;
-    [SerializeField] TMP_Text costText;
+    [SerializeField] protected TMP_Text descriptionText;
+    [SerializeField] protected TMP_Text costText;
 
-    [SerializeField] string description;
-    [SerializeField] UpgradeData upgradeData;
+    protected GameManager gm;
+    
 
-    GameManager gm;
-    Button button;
-
-    void Start()
+    protected virtual void Start()
     {
-        button = GetComponent<Button>();
         gm = GameManager.Instance;
+        
+    }
 
+    protected virtual void OnEnable()
+    {
         descriptionText.text = description;
-        upgradeImage.sprite = upgradeData.image;
-        levelText.text = $"Level {upgradeData.level}";
-        costText.text = Utills.FormatNumber(upgradeData.cost);
-
+        SetData(data);
         GameManager.MoneyChanged += OnMoneyChanged;
     }
 
-    void OnDestroy()
+    protected virtual void OnDisable()
     {
         GameManager.MoneyChanged -= OnMoneyChanged;
     }
 
-    private void OnMoneyChanged()
+    protected virtual void SetData(UpgradeData value)
     {
-        button.interactable = gm.Money >= upgradeData.cost;
+        data = value;
+        costText.text = Utills.FormatNumber(data.Cost);
+    }
+
+    protected void OnMoneyChanged()
+    {
+        button.interactable = gm.Money >= data.Cost;
     }
 
     public void BuyUpgrade()
     {
-        if (gm.Money <= upgradeData.cost) return;
-        gm.Money -= upgradeData.cost;
+        if (gm.Money <= data.Cost) return;
+        gm.Money -= data.Cost;
         Upgrade();
     }
 
