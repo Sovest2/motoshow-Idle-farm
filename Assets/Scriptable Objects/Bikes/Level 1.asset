@@ -17,5 +17,5 @@ MonoBehaviour:
   cost: 250
   income: 40
   prefab: {fileID: 3469824444085639947, guid: c9d5ac18e729ae542ac515bf5586afa0, type: 3}
-  mergeInto: {fileID: 11400000, guid: a1ae908fec4168547917448025a832d2, type: 2}
-  mergeData: {fileID: 11400000, guid: 28e18264193cca3488822dcaa8949e39, type: 2}
+  mergesFrom: {fileID: 11400000, guid: 6d32001e46ce20346b11deccfe84a22b, type: 2}
+  mergeData: {fileID: 11400000, guid: d5780e6b61345d74cbf64daa043aaa84, type: 2}

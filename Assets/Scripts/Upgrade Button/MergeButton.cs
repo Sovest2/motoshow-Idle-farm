@@ -6,7 +6,10 @@ using UnityEngine.UI;
 public class MergeButton : UpgradeButton
 {
     bool canMerge;
+
     MotocycleData mergeInto;
+    MotocycleData mergesFrom;
+
     bool CanMerge 
     {
         get { return canMerge; }
@@ -39,14 +42,16 @@ public class MergeButton : UpgradeButton
 
     void OnBikeAdded(int level)
     {
-        for (int i = level; i >= 0; i--)
+        for (int i = level + 1; i >= 0; i--)
         {
-            if (cm.MotoList[i].Count < 3) continue;
-            if (cm.AvalibleMotos.Count <= i + 1) continue;
-            if (cm.AvalibleMotos[i].MergeInto == null) continue;
+            if (cm.AvalibleMotos.Count <= i) continue;
+            MotocycleData motoData = cm.AvalibleMotos[i];
+            if (motoData.MergesFrom == null) continue;
+            if (cm.MotoList[motoData.MergesFrom.Level].Count < 3) continue;
 
-            SetData(cm.AvalibleMotos[i].MergeData);
-            mergeInto = cm.AvalibleMotos[i].MergeInto;
+            SetData(motoData.MergeData);
+            mergeInto = motoData;
+            mergesFrom = motoData.MergesFrom;
             CanMerge = true;
             break;
         }
@@ -54,7 +59,7 @@ public class MergeButton : UpgradeButton
 
     protected override void Upgrade()
     {
-        cm.RemoveMoto(cm.AvalibleMotos[mergeInto.Level - 1], 3);
+        cm.RemoveMoto(mergesFrom, 3);
         CanMerge = false;
         cm.AddMoto(mergeInto);
     }
