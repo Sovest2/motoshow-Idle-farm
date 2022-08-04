@@ -17,3 +17,5 @@ MonoBehaviour:
   cost: 350
   income: 150
   prefab: {fileID: 2004811911596972871, guid: eaab9a32279ff3c43af478cbe30b3aae, type: 3}
+  mergeInto: {fileID: 0}
+  mergeData: {fileID: 0}

@@ -946,7 +946,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476596483}
-  m_LocalRotation: {x: 0.16018225, y: 0.000000023309845, z: -0.000000003782667, w: 0.9870875}
+  m_LocalRotation: {x: 0.16018224, y: 0.000000004252742, z: -6.9012535e-10, w: 0.9870875}
   m_LocalPosition: {x: 0, y: 3, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1074,9 +1074,6 @@ MonoBehaviour:
   data: {fileID: 11400000, guid: d5780e6b61345d74cbf64daa043aaa84, type: 2}
   descriptionText: {fileID: 705724940}
   costText: {fileID: 1355479499}
-  upgrades:
-  - {fileID: 11400000, guid: d5780e6b61345d74cbf64daa043aaa84, type: 2}
-  - {fileID: 11400000, guid: 28e18264193cca3488822dcaa8949e39, type: 2}
 --- !u!1 &600071001
 GameObject:
   m_ObjectHideFlags: 0
@@ -2210,7 +2207,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.16018225, y: 0.000000023309845, z: -0.000000003782667, w: 0.9870875}
+  m_LocalRotation: {x: 0.16018224, y: 0.000000004252742, z: -6.9012535e-10, w: 0.9870875}
   m_LocalPosition: {x: 0, y: 3, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -4151,10 +4148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bikesParent: {fileID: 1723777440}
-  avilibleMotos:
-  - {fileID: 11400000, guid: 6d32001e46ce20346b11deccfe84a22b, type: 2}
-  - {fileID: 11400000, guid: 378165407759bfd4f97cc0db7b6aab86, type: 2}
-  - {fileID: 11400000, guid: a1ae908fec4168547917448025a832d2, type: 2}
+  avalibleMotos: []
 --- !u!1 &1864081831
 GameObject:
   m_ObjectHideFlags: 0
