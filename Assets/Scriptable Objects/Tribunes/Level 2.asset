@@ -16,5 +16,5 @@ MonoBehaviour:
   level: 2
   cost: 300
   incomeTime: 1
-  income: 3
+  income: 2
   gfxPregab: {fileID: 2373016512439943887, guid: 074ad322c762b0f49b4c3c48c713cedd, type: 3}

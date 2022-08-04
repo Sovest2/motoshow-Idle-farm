@@ -51,8 +51,9 @@ public class UpgradeButton : MonoBehaviour
     public void BuyUpgrade()
     {
         if (gm.Money <= data.Cost) return;
-        Upgrade();
         gm.Money -= data.Cost;
+        Upgrade();
+        OnMoneyChanged();
     }
 
     protected virtual void Upgrade()

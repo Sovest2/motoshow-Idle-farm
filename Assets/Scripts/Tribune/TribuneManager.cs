@@ -17,7 +17,7 @@ public class TribuneManager : MonoBehaviour
 
     public Queue<Tribune> Tribunes { get; private set; } = new Queue<Tribune>();
 
-    float totalIncomeMultiplier = 1;
+    [SerializeField] float totalIncomeMultiplier = 1;
     CageManager cm;
     GameManager gm;
 
@@ -51,7 +51,7 @@ public class TribuneManager : MonoBehaviour
         foreach(Queue<Motocycle> motoQueue in cm.MotoList)
         {
             if (motoQueue.Count <= 0) continue;
-            totalIncomeMultiplier *= motoQueue.Count * motoQueue.Peek().Data.IncomeMultiplier;
+            totalIncomeMultiplier *= Mathf.Pow(motoQueue.Peek().Data.IncomeMultiplier, motoQueue.Count);
         }
     }
 
