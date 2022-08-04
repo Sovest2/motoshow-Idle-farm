@@ -5,13 +5,17 @@ using UnityEngine;
 public class TribuneManager : MonoBehaviour
 {
     public static TribuneManager Instance { get; private set; }
+    
 
     [Header("Tribunes")]
     [SerializeField] Tribune left;
     [SerializeField] Tribune center;
     [SerializeField] Tribune right;
 
-    Queue<Tribune> tribunes = new Queue<Tribune>();
+    [SerializeField] List<TribuneData> avalibleTribunes;
+    public List<TribuneData> AvalibleTribunes { get { return avalibleTribunes; } }
+
+    public Queue<Tribune> Tribunes { get; private set; } = new Queue<Tribune>();
 
     float totalIncomeMultiplier = 1;
     CageManager cm;
@@ -20,15 +24,15 @@ public class TribuneManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+
+        Tribunes.Enqueue(center);
+        Tribunes.Enqueue(left);
+        Tribunes.Enqueue(right);
     }
     void Start()
     {
         cm = CageManager.Instance;
         gm = GameManager.Instance;
-
-        tribunes.Enqueue(center);
-        tribunes.Enqueue(left);
-        tribunes.Enqueue(right);
 
         CageManager.BikesCountChanged += OnBikesCountChanged;
         Tribune.IncomeAcqired += OnIncomeAcqired;

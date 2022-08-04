@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UpgradeBikeButton : UpgradeButton
+public class BuyBikeButton : UpgradeButton
 {
     protected CageManager cm;
 

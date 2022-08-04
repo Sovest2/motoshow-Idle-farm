@@ -17,4 +17,11 @@ public class UpgradeLevelButton : UpgradeButton
         upgradeImage.sprite = data.Icon;
     }
 
+    protected override void SetData(UpgradeData value)
+    {
+        base.SetData(value);
+        levelText.text = $"Level {data.Level}";
+        upgradeImage.sprite = data.Icon;
+    }
+
 }
