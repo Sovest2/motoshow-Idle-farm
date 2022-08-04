@@ -13,12 +13,9 @@ public class MergeButton : UpgradeButton
         {
             canMerge = value;
             button.gameObject.SetActive(canMerge);
-            
         }
     }
     CageManager cm;
-
-    [SerializeField] List<UpgradeData> upgrades;
 
     protected override void Start()
     {
@@ -45,8 +42,9 @@ public class MergeButton : UpgradeButton
         {
             if (cm.MotoList[i].Count < 3) continue;
             if (cm.AvilibleMotos.Count <= i + 1) continue;
+            if (cm.AvilibleMotos[i].MergeInto == null) continue;
 
-            SetData(upgrades[i]);
+            SetData(cm.AvilibleMotos[i].MergeData);
             CanMerge = true;
             break;
         }
@@ -58,7 +56,7 @@ public class MergeButton : UpgradeButton
         {
             if (cm.MotoList[i].Count < 3) continue;
             if (cm.AvilibleMotos.Count < i + 1) continue;
-            if (upgrades.Count <= i) continue;
+            if (cm.AvilibleMotos[i].MergeInto == null) continue;
 
             for (int j = 0; j < 3; j++) cm.RemoveMoto(cm.AvilibleMotos[i]);
             CanMerge = false;
