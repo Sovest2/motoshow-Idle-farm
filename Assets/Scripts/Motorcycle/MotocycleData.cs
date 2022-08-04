@@ -5,13 +5,13 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Motocycle Data", menuName = "Motocycle Data", order = 1)]
 public class MotocycleData : UpgradeData
 {
-    [SerializeField] float income;
+    [SerializeField] float incomeMultiplier;
     [SerializeField] Motocycle prefab;
 
     [SerializeField] MotocycleData mergesFrom;
     [SerializeField] UpgradeData mergeData;
 
-    public float Income { get { return income; } }
+    public float IncomeMultiplier { get { return incomeMultiplier; } }
     public Motocycle Prefab { get { return prefab;} }
     public MotocycleData MergesFrom { get { return mergesFrom; } }
     public UpgradeData MergeData { get { return mergeData; } }

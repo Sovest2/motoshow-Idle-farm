@@ -25,6 +25,7 @@ public class MoneyManager : MonoBehaviour
     void Start()
     {
         gm = GameManager.Instance;
+        DisplayValue = gm.Money;
         GameManager.MoneyChanged += OnMoneyChanged;
     }
 
