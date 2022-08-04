@@ -12,15 +12,10 @@ public class UpgradeBikeButton : UpgradeButton
         cm = CageManager.Instance;
     }
 
-    protected override void OnEnable()
-    {
-        //upgradeData = cm.AvilibleMotos[0];
-        base.OnEnable();
-    }
-
     protected override void Upgrade()
     {
         MotocycleData motoData = (MotocycleData) data;
         cm.AddMoto(motoData);
+        NotificationManager.Instance.CreateNotificationWithText(1.5f, "New bike added");
     }
 }

@@ -60,7 +60,10 @@ public class MergeButton : UpgradeButton
     protected override void Upgrade()
     {
         cm.RemoveMoto(mergesFrom, 3);
+
+        NotificationManager.Instance.CreateNotificationWithText(1.5f, $"3x bikes of Level {mergesFrom.Level} merged into 1x Level {mergeInto.Level}");
         CanMerge = false;
+
         cm.AddMoto(mergeInto);
     }
 }
