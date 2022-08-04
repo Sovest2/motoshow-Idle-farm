@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 1c1981e159c997f4d97f167afe2df459, type: 3}
   level: 2
-  cost: 600
+  cost: 300
   incomeTime: 1
-  income: 300
+  income: 3
   gfxPregab: {fileID: 2373016512439943887, guid: 074ad322c762b0f49b4c3c48c713cedd, type: 3}

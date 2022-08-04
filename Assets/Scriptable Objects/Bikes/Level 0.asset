@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: f625ec0770b844741b83014ed5ac3bf9, type: 3}
   level: 0
-  cost: 150
+  cost: 50
   incomeMultiplier: 1.05
   prefab: {fileID: 6279140974520208652, guid: c06f47449b11c894785f60d7391c37fc, type: 3}
   mergesFrom: {fileID: 0}
