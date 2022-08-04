@@ -8,10 +8,25 @@ public class CageManager : MonoBehaviour
     public static CageManager Instance { get; private set; }
 
     public static Action<int> BikesCountChanged;
+    public static Action CageUpgraded;
 
     [SerializeField] Transform bikesParent;
+    [SerializeField] CageData data;
     [SerializeField] List<MotocycleData> avalibleMotos;
 
+    GameObject gfx;
+
+    public CageData Data
+    {
+        get { return data; }
+        private set 
+        {
+            data = value; 
+            if(gfx != null) Destroy(gfx);
+            gfx = Instantiate(data.GfxPrefab, transform);
+            CageUpgraded?.Invoke();
+        }
+    }
 
     public List<Queue<Motocycle>> MotoList { get; private set; } = new List<Queue<Motocycle>>();
     public List<MotocycleData> AvalibleMotos { get { return avalibleMotos; } }
@@ -21,6 +36,11 @@ public class CageManager : MonoBehaviour
     void Awake()
     {
         Instance = this;
+    }
+
+    void Start()
+    {
+        if (data != null) Data = data;
     }
 
     public void AddMoto(MotocycleData data, int count = 1)

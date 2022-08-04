@@ -548,7 +548,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &254002303
 RectTransform:
   m_ObjectHideFlags: 0
@@ -556,7 +556,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 254002302}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -564,12 +564,12 @@ RectTransform:
   - {fileID: 1376227875}
   - {fileID: 1030324961}
   - {fileID: 126422603}
-  m_Father: {fileID: 1706112224}
-  m_RootOrder: 5
+  m_Father: {fileID: 629942272}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -20, y: 20}
+  m_AnchoredPosition: {x: -0.000022888184, y: -0.00038146973}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &254002304
@@ -616,7 +616,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 629942273}
         m_TargetAssemblyTypeName: UpgradeButton, Assembly-CSharp
         m_MethodName: BuyUpgrade
         m_Mode: 1
@@ -764,6 +764,10 @@ MonoBehaviour:
   left: {fileID: 1675187667}
   center: {fileID: 107125021}
   right: {fileID: 1964402958}
+  avalibleTribunes:
+  - {fileID: 11400000, guid: 21d9c6d8475945b4ab82bc04fd802c57, type: 2}
+  - {fileID: 11400000, guid: 766c914e5cefe23448e2815d40045315, type: 2}
+  - {fileID: 11400000, guid: 78e1efdc970ab854487b764146d42319, type: 2}
 --- !u!1 &289852896
 GameObject:
   m_ObjectHideFlags: 0
@@ -1114,8 +1118,8 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 1454489322}
-  m_Follow: {fileID: 1454489322}
+  m_LookAt: {fileID: 0}
+  m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 5
@@ -1194,11 +1198,11 @@ RectTransform:
   m_Father: {fileID: 1706112224}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 320}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 20, y: 230}
   m_SizeDelta: {x: 200, y: 150}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0}
 --- !u!114 &548339015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1228,7 +1232,6 @@ GameObject:
   - component: {fileID: 600071005}
   - component: {fileID: 600071004}
   - component: {fileID: 600071003}
-  - component: {fileID: 600071006}
   m_Layer: 5
   m_Name: Bike Button
   m_TagString: Untagged
@@ -1243,7 +1246,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 600071001}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1251,12 +1254,12 @@ RectTransform:
   - {fileID: 1236955163}
   - {fileID: 119868446}
   - {fileID: 183933150}
-  m_Father: {fileID: 1706112224}
-  m_RootOrder: 3
+  m_Father: {fileID: 867327836}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 20, y: 20}
+  m_AnchoredPosition: {x: -0.000015258789, y: -0.00038146973}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &600071003
@@ -1303,7 +1306,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 600071006}
+      - m_Target: {fileID: 867327837}
         m_TargetAssemblyTypeName: UpgradeButton, Assembly-CSharp
         m_MethodName: BuyUpgrade
         m_Mode: 1
@@ -1353,23 +1356,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 600071001}
   m_CullTransparentMesh: 1
---- !u!114 &600071006
+--- !u!1 &629942271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 629942272}
+  - component: {fileID: 629942273}
+  m_Layer: 5
+  m_Name: Income Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &629942272
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629942271}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 254002303}
+  m_Father: {fileID: 1706112224}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 240.00005, y: -601.09045}
+  m_SizeDelta: {x: 200, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &629942273
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600071001}
+  m_GameObject: {fileID: 629942271}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e34f4690a87364642a73fc85a67c5cfb, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e76da1919658a048ba432be25c94aec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 600071003}
-  description: Add Vehicle
-  data: {fileID: 11400000, guid: 6d32001e46ce20346b11deccfe84a22b, type: 2}
-  descriptionText: {fileID: 1236955164}
-  costText: {fileID: 298994521}
+  button: {fileID: 254002304}
+  description: Income
+  data: {fileID: 11400000, guid: 21d9c6d8475945b4ab82bc04fd802c57, type: 2}
+  descriptionText: {fileID: 1376227876}
+  costText: {fileID: 1595773909}
+  upgradeImage: {fileID: 1699275770}
+  levelText: {fileID: 1030324962}
 --- !u!1 &641597617
 GameObject:
   m_ObjectHideFlags: 0
@@ -1783,7 +1825,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.030000001, y: 0.72}
   m_AnchorMax: {x: 0.96500003, y: 0.9566667}
-  m_AnchoredPosition: {x: -0.46900177, y: -0.42382812}
+  m_AnchoredPosition: {x: -0.46899414, y: -0.42382812}
   m_SizeDelta: {x: -1.060997, y: -0.5524006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &705724940
@@ -1912,7 +1954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9da4727f2cb1dab43b7c20e1d5ff19dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 100
+  money: 10000
 --- !u!4 &745264832
 Transform:
   m_ObjectHideFlags: 0
@@ -2197,6 +2239,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 798058295}
   m_CullTransparentMesh: 1
+--- !u!1 &867327835
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 867327836}
+  - component: {fileID: 867327837}
+  m_Layer: 5
+  m_Name: Bike Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &867327836
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867327835}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 600071002}
+  m_Father: {fileID: 1706112224}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -240, y: -601.09045}
+  m_SizeDelta: {x: 200, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &867327837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867327835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e34f4690a87364642a73fc85a67c5cfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 600071003}
+  description: Add Vehicle
+  data: {fileID: 11400000, guid: 6d32001e46ce20346b11deccfe84a22b, type: 2}
+  descriptionText: {fileID: 1236955164}
+  costText: {fileID: 298994521}
 --- !u!1 &885425050
 GameObject:
   m_ObjectHideFlags: 0
@@ -3553,92 +3649,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1454489321
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1789722278}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 1a7cb88ff62a9294a9a07a062485fb9b, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1a7cb88ff62a9294a9a07a062485fb9b, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1a7cb88ff62a9294a9a07a062485fb9b, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1a7cb88ff62a9294a9a07a062485fb9b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1a7cb88ff62a9294a9a07a062485fb9b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1a7cb88ff62a9294a9a07a062485fb9b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1a7cb88ff62a9294a9a07a062485fb9b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1a7cb88ff62a9294a9a07a062485fb9b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1a7cb88ff62a9294a9a07a062485fb9b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1a7cb88ff62a9294a9a07a062485fb9b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1a7cb88ff62a9294a9a07a062485fb9b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1a7cb88ff62a9294a9a07a062485fb9b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1a7cb88ff62a9294a9a07a062485fb9b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 1a7cb88ff62a9294a9a07a062485fb9b, type: 3}
-      propertyPath: m_LightProbeUsage
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 1a7cb88ff62a9294a9a07a062485fb9b, type: 3}
-      propertyPath: m_ReflectionProbeUsage
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 1a7cb88ff62a9294a9a07a062485fb9b, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 9b947530157c1044f96098315272c4ec, type: 2}
-    - target: {fileID: 919132149155446097, guid: 1a7cb88ff62a9294a9a07a062485fb9b, type: 3}
-      propertyPath: m_Name
-      value: GFX
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 1a7cb88ff62a9294a9a07a062485fb9b, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1a7cb88ff62a9294a9a07a062485fb9b, type: 3}
---- !u!4 &1454489322 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1a7cb88ff62a9294a9a07a062485fb9b, type: 3}
-  m_PrefabInstance: {fileID: 1454489321}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1476628613
 GameObject:
   m_ObjectHideFlags: 3
@@ -4233,9 +4243,9 @@ RectTransform:
   - {fileID: 1669630650}
   - {fileID: 258029142}
   - {fileID: 548339014}
-  - {fileID: 600071002}
+  - {fileID: 867327836}
   - {fileID: 798058296}
-  - {fileID: 254002303}
+  - {fileID: 629942272}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4286,7 +4296,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1789722278}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1789722277
 GameObject:
@@ -4317,7 +4327,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2046784684}
-  - {fileID: 1454489322}
   - {fileID: 1723777440}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -4335,6 +4344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bikesParent: {fileID: 1723777440}
+  data: {fileID: 11400000, guid: e10fcd1767bca2344b2900dcae1543ac, type: 2}
   avalibleMotos:
   - {fileID: 11400000, guid: 6d32001e46ce20346b11deccfe84a22b, type: 2}
   - {fileID: 11400000, guid: 378165407759bfd4f97cc0db7b6aab86, type: 2}

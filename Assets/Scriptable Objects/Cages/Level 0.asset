@@ -9,12 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85bf0d0c3c7c9f64391d6ffd8b228efd, type: 3}
+  m_Script: {fileID: 11500000, guid: 2fd16f1ff005bd94ebc854c4be054386, type: 3}
   m_Name: Level 0
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 1c1981e159c997f4d97f167afe2df459, type: 3}
+  icon: {fileID: 0}
   level: 0
-  cost: 150
-  incomeTime: 1
-  income: 150
-  gfxPregab: {fileID: 3174728962528081246, guid: 823cee033abbae74089f820ed97418c3, type: 3}
+  cost: 0
+  maxBikes: 9
+  gfxPregab: {fileID: 2551197994070912693, guid: 6eeda378926550e4a984d3384b1804eb, type: 3}
